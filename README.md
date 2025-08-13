@@ -9,15 +9,6 @@ A **Java Swing desktop application** designed to manage the operations of a **mo
 ## **Features**
 
 
-
-* **Product Management**:
-
-  * Add, edit, delete, and search products with stock tracking.
-  * Product image upload and display.
-  * Category and brand selection with predefined options (Smartphone, Tablet, Laptop, etc.).
-  * Modern UI with a card-based product display.
-  * Stock level monitoring and alerts for low stock.
-
 ### Product Management
 
   * Add, edit, delete, and search products with stock tracking.
@@ -25,17 +16,16 @@ A **Java Swing desktop application** designed to manage the operations of a **mo
   * Category and brand selection with predefined options (Smartphone, Tablet, Laptop, etc.).
   * Modern UI with a card-based product display.
   * Stock level monitoring and alerts for low stock.
-  
+
 ![Product Management](screenshots/product-management.png)
 
-* **Customer Management**:
+### Customer Management
 
   * Manage customer information, contact details, and purchase history.
 
-  ### Customer Management
 ![Order Management](screenshots/customer-management.png)
 
-* **Order Management**:
+### Order Management
 
   * Create orders with product selection from dropdown.
   * Add new products directly from the order window if unavailable.
@@ -43,53 +33,45 @@ A **Java Swing desktop application** designed to manage the operations of a **mo
   * Automatic stock reduction on delivery.
   * Real-time total calculation for orders.
 
-  
-### Order Management
 ![Order Management](screenshots/order-management.png)
 
-* **Repair Management**:
+### Repair Management
 
   * Track repair requests, statuses, and employee assignments.
 
-  
-### Repair Management
 ![Order Management](screenshots/repair-management.png)
 
-* **Employee Management**:
+### Employee Management
 
   * Manage employee information, roles, and work status.
 
-
-### Employee Management
 ![Order Management](screenshots/employee-management.png)
 
 
-* **Salary Management**:
+### Salaries Management
 
   * Track employee salaries, bonuses, and payments.
 
-  ### Salaries Management
 ![Order Management](screenshots/salaries-management.png)
 
 
-* **Dashboard**:
+### Dashboard UI
 
   * Real-time metrics with auto-refresh every 30 seconds.
   * Displays total stock value, pending orders, total earnings, customer summaries, salary statuses, and low stock alerts.
   * Business KPIs (Key Performance Indicators) at a glance.
 
-### Dashboard UI
 ![Dashboard](screenshots/dashboard.png)
 
 
-* **User Authentication**:
+### User Authentication
 
 * Secure login and registration system with BCrypt password hashing.
 
-### Register Management
+### Register UI
 ![Order Management](screenshots/register.png)
 
-### Login Management
+### Login UI
 ![Order Management](screenshots/login.png)
 
 

@@ -280,6 +280,35 @@ This error occurs when the database was created before image support was added. 
 
 ---
 
+## Screenshots
+
+### Dashboard UI
+![Dashboard](screenshots/dashboard.png)
+
+### Product Management
+![Product Management](screenshots/product-management.png)
+
+### Order Management
+![Order Management](screenshots/order-management.png)
+
+### Customer Management
+![Order Management](screenshots/customer-management.png)
+
+### Employee Management
+![Order Management](screenshots/employee-management.png)
+
+### Repair Management
+![Order Management](screenshots/repair-management.png)
+
+### Salaries Management
+![Order Management](screenshots/salaries-management.png)
+
+### Register Management
+![Order Management](screenshots/register.png)
+
+### Login Management
+![Order Management](screenshots/login.png)
+
 ## **License**
 
 This project is Developed by Azees Asardeen , to provided as-is for educational and demonstration purposes.

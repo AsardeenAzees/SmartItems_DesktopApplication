@@ -1,0 +1,87 @@
+-- Smart Items schema (smartitemsdb)
+
+CREATE DATABASE IF NOT EXISTS smartitemsdb CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
+USE smartitemsdb;
+
+CREATE TABLE IF NOT EXISTS users (
+  id BIGINT PRIMARY KEY AUTO_INCREMENT,
+  name VARCHAR(100) NOT NULL,
+  email VARCHAR(150) NOT NULL UNIQUE,
+  mobile VARCHAR(20) NOT NULL,
+  password VARCHAR(255) NOT NULL,
+  gender VARCHAR(10),
+  created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+CREATE TABLE IF NOT EXISTS products (
+  id BIGINT PRIMARY KEY AUTO_INCREMENT,
+  name VARCHAR(150) NOT NULL,
+  category VARCHAR(100) NOT NULL,
+  brand VARCHAR(100) NOT NULL,
+  price DECIMAL(10,2) NOT NULL,
+  stock_quantity INT NOT NULL,
+  description TEXT,
+  image_path VARCHAR(500),
+  created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+CREATE TABLE IF NOT EXISTS customers (
+  id BIGINT PRIMARY KEY AUTO_INCREMENT,
+  name VARCHAR(150) NOT NULL,
+  email VARCHAR(150),
+  phone VARCHAR(50),
+  address VARCHAR(255)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+CREATE TABLE IF NOT EXISTS employees (
+  id BIGINT PRIMARY KEY AUTO_INCREMENT,
+  name VARCHAR(150) NOT NULL,
+  role VARCHAR(100),
+  salary DECIMAL(10,2),
+  status VARCHAR(20) DEFAULT 'active'
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+CREATE TABLE IF NOT EXISTS orders (
+  id BIGINT PRIMARY KEY AUTO_INCREMENT,
+  customer_id BIGINT NOT NULL,
+  order_date DATE NOT NULL,
+  status VARCHAR(50) DEFAULT 'pending',
+  total_amount DECIMAL(10,2) NOT NULL,
+  FOREIGN KEY (customer_id) REFERENCES customers(id)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+CREATE TABLE IF NOT EXISTS order_items (
+  id BIGINT PRIMARY KEY AUTO_INCREMENT,
+  order_id BIGINT NOT NULL,
+  product_id BIGINT NOT NULL,
+  quantity INT NOT NULL,
+  price DECIMAL(10,2) NOT NULL,
+  FOREIGN KEY (order_id) REFERENCES orders(id) ON DELETE CASCADE,
+  FOREIGN KEY (product_id) REFERENCES products(id)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+CREATE TABLE IF NOT EXISTS repairs (
+  id BIGINT PRIMARY KEY AUTO_INCREMENT,
+  customer_id BIGINT NOT NULL,
+  product_id BIGINT,
+  issue VARCHAR(255) NOT NULL,
+  status VARCHAR(50) DEFAULT 'pending',
+  assigned_to BIGINT,
+  created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+  FOREIGN KEY (customer_id) REFERENCES customers(id),
+  FOREIGN KEY (product_id) REFERENCES products(id),
+  FOREIGN KEY (assigned_to) REFERENCES employees(id)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+CREATE TABLE IF NOT EXISTS salaries (
+  id BIGINT PRIMARY KEY AUTO_INCREMENT,
+  employee_id BIGINT NOT NULL,
+  salary_amount DECIMAL(10,2) NOT NULL,
+  bonus DECIMAL(10,2) DEFAULT 0,
+  deductions DECIMAL(10,2) DEFAULT 0,
+  payment_date DATE NOT NULL,
+  FOREIGN KEY (employee_id) REFERENCES employees(id)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+
+

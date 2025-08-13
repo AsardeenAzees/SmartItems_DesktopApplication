@@ -1,6 +1,3 @@
-Here is a **refined and improved version** of the `README.md` file with all the necessary and important information for the **Smart Items Desktop Application**:
-
----
 
 # **Smart Items Desktop Application**
 

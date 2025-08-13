@@ -308,8 +308,6 @@ This error occurs when the database was created before image support was added. 
 * Check file permissions if using absolute paths.
 * For relative paths, ensure the path is correct relative to the application.
 
----
-
 
 
 ## **License**

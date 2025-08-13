@@ -282,8 +282,4 @@ This error occurs when the database was created before image support was added. 
 
 ## **License**
 
-This project is provided as-is for educational and demonstration purposes.
-
----
-
-This version of the **README.md** file includes all the necessary information, from setting up the project to troubleshooting common issues, to ensure users and developers can easily run and contribute to the project.
+This project is Developed by Azees Asardeen , to provided as-is for educational and demonstration purposes.

@@ -18,7 +18,14 @@ A **Java Swing desktop application** designed to manage the operations of a **mo
   * Modern UI with a card-based product display.
   * Stock level monitoring and alerts for low stock.
 
-  ### Product Management
+### Product Management
+
+  * Add, edit, delete, and search products with stock tracking.
+  * Product image upload and display.
+  * Category and brand selection with predefined options (Smartphone, Tablet, Laptop, etc.).
+  * Modern UI with a card-based product display.
+  * Stock level monitoring and alerts for low stock.
+  
 ![Product Management](screenshots/product-management.png)
 
 * **Customer Management**:

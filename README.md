@@ -8,9 +8,7 @@ A **Java Swing desktop application** designed to manage the operations of a **mo
 
 ## **Features**
 
-* **User Authentication**:
 
-  * Secure login and registration system with BCrypt password hashing.
 
 * **Product Management**:
 
@@ -20,9 +18,15 @@ A **Java Swing desktop application** designed to manage the operations of a **mo
   * Modern UI with a card-based product display.
   * Stock level monitoring and alerts for low stock.
 
+  ### Product Management
+![Product Management](screenshots/product-management.png)
+
 * **Customer Management**:
 
   * Manage customer information, contact details, and purchase history.
+
+  ### Customer Management
+![Order Management](screenshots/customer-management.png)
 
 * **Order Management**:
 
@@ -32,23 +36,63 @@ A **Java Swing desktop application** designed to manage the operations of a **mo
   * Automatic stock reduction on delivery.
   * Real-time total calculation for orders.
 
+  
+### Order Management
+![Order Management](screenshots/order-management.png)
+
 * **Repair Management**:
 
   * Track repair requests, statuses, and employee assignments.
+
+  
+### Repair Management
+![Order Management](screenshots/repair-management.png)
 
 * **Employee Management**:
 
   * Manage employee information, roles, and work status.
 
+
+### Employee Management
+![Order Management](screenshots/employee-management.png)
+
+
 * **Salary Management**:
 
   * Track employee salaries, bonuses, and payments.
+
+  ### Salaries Management
+![Order Management](screenshots/salaries-management.png)
+
 
 * **Dashboard**:
 
   * Real-time metrics with auto-refresh every 30 seconds.
   * Displays total stock value, pending orders, total earnings, customer summaries, salary statuses, and low stock alerts.
   * Business KPIs (Key Performance Indicators) at a glance.
+
+### Dashboard UI
+![Dashboard](screenshots/dashboard.png)
+
+
+* **User Authentication**:
+
+* Secure login and registration system with BCrypt password hashing.
+
+### Register Management
+![Order Management](screenshots/register.png)
+
+### Login Management
+![Order Management](screenshots/login.png)
+
+
+
+
+
+
+
+
+
 
 ## **Prerequisites**
 
@@ -280,34 +324,7 @@ This error occurs when the database was created before image support was added. 
 
 ---
 
-## Screenshots
 
-### Dashboard UI
-![Dashboard](screenshots/dashboard.png)
-
-### Product Management
-![Product Management](screenshots/product-management.png)
-
-### Order Management
-![Order Management](screenshots/order-management.png)
-
-### Customer Management
-![Order Management](screenshots/customer-management.png)
-
-### Employee Management
-![Order Management](screenshots/employee-management.png)
-
-### Repair Management
-![Order Management](screenshots/repair-management.png)
-
-### Salaries Management
-![Order Management](screenshots/salaries-management.png)
-
-### Register Management
-![Order Management](screenshots/register.png)
-
-### Login Management
-![Order Management](screenshots/login.png)
 
 ## **License**
 
